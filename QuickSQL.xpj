@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<Project>
+   <Type Value="lib"/>
+   <Description Value="QuickSQL"/>
+   <Output Value="QuickSQL.lib"/>
+   <Environment Value="FWH"/>
+   <MainModule Value="TConnectionBase.prg"/>
+   <MultipleInstances Value="Y"/>
+   <XPManifest Value="Y"/>
+   <Icon Value=""/>
+   <Parameters Value=""/>
+   <Version>
+      <VersionInfo Value="N"/>
+      <Version Value="1.0"/>
+      <Release Value="0"/>
+      <Build Value="0"/>
+      <Company Value=""/>
+      <CopyRight Value=""/>
+      <TradeMarks Value=""/>
+      <Comments Value=""/>
+   </Version>
+   <Directories>
+      <SourceDir Value="Source"/>
+      <IncludeDir Value="Include"/>
+      <ResourceDir Value="Resource"/>
+      <ObjDir Value="Obj"/>
+   </Directories>
+   <Options>
+      <AutomaticMemvarDeclaration Value="N"/>
+      <DebugInfo Value="N"/>
+      <SuppressLineNumberInformation Value="N"/>
+      <SuppressShortcutting Value="N"/>
+      <WarnningLevel Value="1"/>
+      <MoreOptions Value=""/>
+      <MoreCOpt Value=""/>
+      <MapFile Value="N"/>
+      <ConsoleMode Value="N"/>
+      <MoreLinkOpt Value=""/>
+   </Options>
+   <Export>
+      <Dir Value=""/>
+      <Source Value="Y"/>
+      <Exe Value="N"/>
+      <Bin Value="N"/>
+      <Resource Value="Y"/>
+      <ResourceAll Value="N"/>
+      <ErrorLog Value="N"/>
+      <Subprojects Value="Y"/>
+   </Export>
+   <Clean>
+      <All Value="N"/>
+   </Clean>
+   <FinalExe>
+      <FullCompile Value="N"/>
+      <UpxCompress Value="N"/>
+      <CompressFlags Value=""/>
+      <Installer Value="N"/>
+      <InstallerFlags Value=""/>
+      <TlbInfo Value="N"/>
+   </FinalExe>
+   <VCS>
+      <Type Value="SVN"/>
+   </VCS>
+   <Files>
+      <File Filename="mysql.c"/>
+      <File Filename="TConnectionBase.prg"/>
+      <File Filename="TConnection.prg"/>
+      <File Filename="TModelBase.prg"/>
+      <File Filename="TModel.prg"/>
+      <File Filename="TResultBase.prg"/>
+      <File Filename="TResult.prg"/>
+      <File Filename="mysql.ch"/>
+   </Files>
+</Project>
+
