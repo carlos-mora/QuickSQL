@@ -1,6 +1,8 @@
 #include "hbclass.ch"
 #include "mysql.ch"
 #include "common.ch"
+#define __NODEBUG__
+#include "debug.ch"
 
 //------------------------------------------------------------------------------
 CLASS TResultBase
@@ -24,6 +26,12 @@ CLASS TResultBase
    METHOD FieldGet()
    METHOD FieldPos()
    METHOD FieldName()
+
+   /*
+   METHOD FieldType()
+   METHOD FieldLen()
+   METHOD FieldDec()
+   */
 
    METHOD GoTo()
    METHOD GoTop()
@@ -177,6 +185,7 @@ METHOD FieldGet(i)
          ::aRow := mysql_fetch_row( ::hResult )
       ENDIF
    ENDIF
+   DEBUG ::aRow[i]
 RETURN SqlValue2Clip( ::aRow[i], ::aMetaData[i][MYSQL_FS_TYPE] )
 
 //------------------------------------------------------------------------------

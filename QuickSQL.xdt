@@ -1,6 +1,6 @@
 [DESKTOP]
-1=TConnection.prg,52,0,0,0,6,0,1104
-2=TModel.prg,552,24,552,16,552,0,1432
-3=TResult.prg,42,0,42,0,0,0,832
+1=TConnectionBase.prg,138,0,138,0,115,0,880
+2=TResultBase.prg,69,25,69,25,54,0,832
+3=TModelBase.prg,46,21,46,21,15,0,1432
 4=mysql.c,63,1,63,1,33,0,1272
-Current=1
+Current=2
