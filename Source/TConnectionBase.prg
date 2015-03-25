@@ -33,7 +33,11 @@ CLASS TConnectionBase
 
    METHOD Query()
    METHOD ScalarQuery()
+   METHOD Execute()
    MESSAGE Command() METHOD Execute()
+
+   METHOD Model()
+   METHOD ClearModelCache()
 
    METHOD InsertId()
    METHOD AffectedRows()
@@ -44,7 +48,6 @@ CLASS TConnectionBase
 
    METHOD Register()
    METHOD DeRegister()
-
 
 ENDCLASS
 
@@ -212,6 +215,15 @@ METHOD ScalarQuery( cQuery, uDefault, ... ) // returns Value
 
 RETURN uResult
 
+//------------------------------------------------------------------------------
+METHOD Model( cTableName, aFields )
+//------------------------------------------------------------------------------
+RETURN TModel():New( Self, cTableName, aFields )
+
+//------------------------------------------------------------------------------
+METHOD ClearModelCache()
+//------------------------------------------------------------------------------
+RETURN Self
 //------------------------------------------------------------------------------
 METHOD ErrorMessage()
 //------------------------------------------------------------------------------
